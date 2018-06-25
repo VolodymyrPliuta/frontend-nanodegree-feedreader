@@ -45,6 +45,12 @@ $(function() {
      */
   });
 
+    it('has name', () => {
+      expect(allFeeds).toBeDefined();
+      allFeeds.forEach(feed => {
+        expect(feed.name.length).not.toBe(0);
+      })
+    })
 
   /* TODO: Write a new test suite named "The menu" */
 
